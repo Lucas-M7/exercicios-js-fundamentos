@@ -39,3 +39,12 @@ function convercaoDeHorario(hora24){
 }
 
 console.log(convercaoDeHorario('16:45'))
+
+//Execício 6: Crie uma função que converta a temperetura em Celsius para Fahrenheit
+
+const convertCtoF =  celsius =>{
+    let fahrenheit = celsius * 9/5 + 32
+    return fahrenheit
+}
+
+console.log(convertCtoF(30))
