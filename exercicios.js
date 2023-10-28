@@ -48,3 +48,32 @@ const convertCtoF =  celsius =>{
 }
 
 console.log(convertCtoF(30))
+
+//Exercício 7: Verificar a média de 3 alunos utilizando o laço for
+
+let alunos = [
+    [10, 8, 10, 9],
+    [8, 8, 7, 9],
+    [7, 6, 6, 8]
+]
+
+let nota = 0
+for(let i = 0; i < alunos.length; i++){
+    nota = 0
+    aluno = alunos[i]
+    console.log('Aluno: ' + aluno)
+
+    for(let j = 0; j < aluno.length; j++){
+        nota += aluno[j]
+    }
+    media = nota / 4
+
+    if(media >= 6){
+        resultado = 'aprovado'
+    }else{
+        resultado = 'reprovado'
+    }
+
+    console.log("Media: " + media + " - " + resultado)
+
+}
